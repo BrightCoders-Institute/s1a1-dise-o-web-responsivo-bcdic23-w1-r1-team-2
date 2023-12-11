@@ -1,0 +1,49 @@
+$breakpoints: (
+  'small': (max-width: 799px),
+  'medium': (min-width: 800px),
+  'large': (min-width: 1000px),
+  'huge': (min-width: 1200px),
+);
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { }
+
+
+
+$small: 500px;
+$smallAlt: 501px;
+$medium: 850px;
+$mediumAlt: 851px;
+$large: 1200px;
+$extra-large: 1500px;
+
+//HOW TO USE THE MEDIA QUERIES
+/*@include respond-to('medium') {
+    color: blue;
+  }*/
+
+  @mixin centerer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media screen and (max-width: $small) {
+      /*position: static;
+      top: 0;
+      left: 0;
+      transform: translate(0, 0);*/
+    }
+  }
