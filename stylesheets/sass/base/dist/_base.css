@@ -1,15 +1,12 @@
 body {
   overflow-x: hidden;
-  font-size: $body-size;
-  font-family: $font-body;
 }
 
 button {
   cursor: pointer;
-
-  &:hover {
-    cursor: pointer;
-  }
+}
+button:hover {
+  cursor: pointer;
 }
 
 html {
@@ -19,10 +16,4 @@ html {
 body,
 html {
   height: 100%;
-}
-
-
-
-@media (min-width: 1440px)  { 
-
 }

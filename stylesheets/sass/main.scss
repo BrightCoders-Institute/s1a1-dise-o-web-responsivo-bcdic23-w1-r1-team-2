@@ -7,8 +7,8 @@
 
 @import
   'base/reset',
-  'base/base',
   'base/fonts',
+  'base/base',
   'base/typography';
 
 @import
@@ -26,4 +26,5 @@
   'layout/sidebar';
 
 @import
+  'pages/hero',
   'pages/navbar';

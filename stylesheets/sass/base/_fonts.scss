@@ -1,4 +1,26 @@
-@font-face {
-  font-family: Bebas;
-  src: url(../../PDF/Tipografia/BebasNeue-Regular.ttf);
+$body-size: 18px;
+$font-headers: 'Poppins', sans-serif;
+$font-body: 'Open Sans', sans-serif;
+
+.regular {
+  font-weight: 400;
 }
+
+.semibold {
+  font-weight: 600;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $font-headers;
+  font-weight: 600;
+}
+
+button, a {
+    font-weight: 700;
+    font-family: $font-body;
+}
+
+p {
+  font-weight: 400;
+}
+
