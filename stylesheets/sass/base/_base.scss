@@ -1,43 +1,291 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+:root {
+  scroll-behavior: smooth;
 }
-ol, ul {
-	list-style: none;
+
+body {
+  margin: 0; // 1
+  -webkit-text-size-adjust: 100%; // 3
 }
-blockquote, q {
-	quotes: none;
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+abbr[title],
+abbr[data-bs-original-title] {
+  // 1
+  text-decoration: underline dotted; // 2
+  cursor: help; // 3
+  text-decoration-skip-ink: none; // 4
 }
+
+// Address
+
+address {
+  margin-bottom: 1rem;
+  font-style: normal;
+  line-height: inherit;
+}
+
+// Lists
+
+ol,
+ul {
+  padding-left: 2rem;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
+// 1. Undo browser default
+
+dd {
+  margin-bottom: 0.5rem;
+  margin-left: 0; // 1
+}
+
+// Blockquote
+
+blockquote {
+  margin: 0 0 1rem;
+}
+
+// Strong
+//
+// Add the correct font weight in Chrome, Edge, and Safari
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+// Small
+//
+// Add the correct font size in all browsers
+
+small {
+  font-size: 85%;
+}
+
+sub,
+sup {
+  position: relative;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+
+a:not([href]):not([class]) {
+  &,
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+pre {
+  display: block;
+  margin-top: 0; // 1
+  margin-bottom: 1rem; // 2
+  overflow: auto; // 3
+
+  code {
+    color: inherit;
+    word-break: normal;
+  }
+}
+
+code {
+  word-wrap: break-word;
+
+  a > & {
+    color: inherit;
+  }
+}
+
+figure {
+  margin: 0 0 1rem;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  caption-side: bottom;
+  border-collapse: collapse;
 }
+
+caption {
+  text-align: left;
+}
+
+th {
+  text-align: inherit; // 2
+  text-align: -webkit-match-parent; // 3
+}
+
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+}
+
+label {
+  display: inline-block; // 1
+}
+
+button:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0; // 1
+  font-family: inherit;
+  line-height: inherit;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+[role="button"] {
+  cursor: pointer;
+}
+
+select {
+  word-wrap: normal;
+
+  &:disabled {
+    opacity: 1;
+  }
+}
+
+[list]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+button,
+[type="button"], // 1
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; // 2
+}
+
+::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
+textarea {
+  resize: vertical; // 1
+}
+
+fieldset {
+  min-width: 0; // 1
+  padding: 0; // 2
+  margin: 0; // 2
+  border: 0; // 2
+}
+
+legend {
+  float: left; // 1
+  width: 100%;
+  padding: 0;
+  line-height: inherit;
+
+  + * {
+    clear: left; // 2
+  }
+}
+
+::-webkit-datetime-edit-fields-wrapper,
+::-webkit-datetime-edit-text,
+::-webkit-datetime-edit-minute,
+::-webkit-datetime-edit-hour-field,
+::-webkit-datetime-edit-day-field,
+::-webkit-datetime-edit-month-field,
+::-webkit-datetime-edit-year-field {
+  padding: 0;
+}
+
+::-webkit-inner-spin-button {
+  height: auto;
+}
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+::file-selector-button {
+  font: inherit;
+}
+
+::-webkit-file-upload-button {
+  font: inherit; // 1
+  -webkit-appearance: button; // 2
+}
+
+output {
+  display: inline-block;
+}
+
+iframe {
+  border: 0;
+}
+
+summary {
+  display: list-item; // 1
+  cursor: pointer;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+[hidden] {
+  display: none !important;
+}
+
 body {
   overflow-x: hidden;
   font-size: $body-size;
@@ -61,10 +309,8 @@ html {
   height: 100%;
 }
 
-
-
-@media (min-width: 1440px)  { 
-
+img {
+  width: 100%;
 }
 
 /* Contenedor de ancho fijo */
@@ -74,34 +320,24 @@ html {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  }
-  
-  
-  /* Breakpoints */
+
   @media (min-width: 576px) {
-  /* Small devices (sm) */
-  .container {
-  max-width: 540px;
+    /* Small devices (sm) */
+    max-width: 540px;
   }
-  }
-  
+
   @media (min-width: 768px) {
-  /* Medium devices (md) */
-  .container {
-  max-width: 720px;
+    /* Medium devices (md) */
+    max-width: 720px;
   }
-  }
-  
+
   @media (min-width: 992px) {
-  /* Large devices (lg) */
-  .container {
-  max-width: 960px;
+    /* Large devices (lg) */
+    max-width: 960px;
   }
-  }
-  
+
   @media (min-width: 1200px) {
-  /* Extra large devices (xl) */
-  .container {
-  max-width: 1140px;
+    /* Extra large devices (xl) */
+    max-width: 1140px;
   }
-  }
+}
