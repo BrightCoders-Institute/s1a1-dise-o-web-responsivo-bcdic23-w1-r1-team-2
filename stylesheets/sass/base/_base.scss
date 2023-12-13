@@ -26,3 +26,42 @@ html {
 @media (min-width: 1440px)  { 
 
 }
+
+/* Contenedor de ancho fijo */
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  }
+  
+  
+  /* Breakpoints */
+  @media (min-width: 576px) {
+  /* Small devices (sm) */
+  .container {
+  max-width: 540px;
+  }
+  }
+  
+  @media (min-width: 768px) {
+  /* Medium devices (md) */
+  .container {
+  max-width: 720px;
+  }
+  }
+  
+  @media (min-width: 992px) {
+  /* Large devices (lg) */
+  .container {
+  max-width: 960px;
+  }
+  }
+  
+  @media (min-width: 1200px) {
+  /* Extra large devices (xl) */
+  .container {
+  max-width: 1140px;
+  }
+  }

@@ -1,0 +1,22 @@
+.button-style{
+    font-weight: 700;
+    font-family: $font-body;
+    border-radius: 100px;
+}
+.white-button {
+    @extend .button-style;
+    background-color: $neutral-pale-cyan;
+    padding: 5px 15px;
+    color: $neutral-dark-cyan;
+    -webkit-box-shadow: 0 3px 16.5px -1px #00252e;
+    -moz-box-shadow: 0 3px 16.5px -1px #00252e;
+    box-shadow: 0 3px 16.5px -1px #00252e;
+}
+
+.pink-button {
+    @extend .button-style;
+    background-color: $primary-color;
+    padding: 10px 30px; 
+    width: 80%;
+    color: $neutral-pale-cyan;
+}
