@@ -19,17 +19,28 @@
         @extend .row;
         gap: 10px;
         flex-direction: row;
+        align-items: flex-start;
+        width: 100%;
         
         img {
-            width: 50px;
+            width: 20px;
         }
     }
 
     .text{
         color: white;
+        text-align: left;
     }
 
     .logo{
         max-width: 200px;
+    }
+
+    .info-wrapper{
+        width: 90%;
+    }
+
+    .img-wrapper{
+        width: 10%;
     }
 }
