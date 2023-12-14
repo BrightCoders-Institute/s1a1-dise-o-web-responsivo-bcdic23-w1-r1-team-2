@@ -1,0 +1,35 @@
+.footer{
+    background-color: $neutral-dark-cyan;
+    padding: 200px 0 80px 0;
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .footer-section{
+        @extend .row;
+        gap: 15px;
+    }
+
+    .text-wrapper{
+        @extend .row;
+        gap: 10px;
+        flex-direction: row;
+        
+        img {
+            width: 50px;
+        }
+    }
+
+    .text{
+        color: white;
+    }
+
+    .logo{
+        max-width: 200px;
+    }
+}
