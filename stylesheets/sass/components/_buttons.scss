@@ -5,12 +5,13 @@
 }
 .white-button {
     @extend .button-style;
-    background-color: $neutral-pale-cyan;
-    padding: 5px 15px;
+    background-color: white;
+    padding: 5px 25px;
+    font-size: 13px;
     color: $neutral-dark-cyan;
-    -webkit-box-shadow: 0 3px 16.5px -1px #00252e;
-    -moz-box-shadow: 0 3px 16.5px -1px #00252e;
-    box-shadow: 0 3px 16.5px -1px #00252e;
+    -webkit-box-shadow: 0 1px 8.5px -6px #00252e;
+    -moz-box-shadow: 0 1px 8.5px -6px #00252e;
+    box-shadow: 0 1px 8.5px -6px #00252e;
 }
 
 .pink-button {
