@@ -3,11 +3,33 @@
   background-color: $neutral-pale-cyan;
   position: relative;
 
-  .img-bubble {
+  @media (min-width: 1200px) {
+    padding: 50px 0;
+  }
+
+  .img-bubble-movil {
     position: absolute;
     width: 100%;
     top: 0;
     right: 0;
+    max-height: 100%;
+
+    @media (min-width: 1200px) {
+      display: none;
+    }
+  }
+
+  .img-bubble-desktop {
+    display: none;
+
+    @media (min-width: 1200px) {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      right: 0;
+      max-height: 100%;
+      display: block;
+    }
   }
 
   .container {
@@ -19,30 +41,33 @@
     font-size: 30px;
     line-height: 1.3;
     margin-bottom: 0px;
+
     @media (min-width: 1200px) {
-        text-align: left;
-        font-size: 50px;
-      }
+      text-align: left;
+      font-size: 35px;
+    }
   }
 
   .text {
     color: $neutral-dark-cyan;
     margin-bottom: 0px;
     max-width: 90%;
+
     @media (min-width: 1200px) {
-        text-align: left;
-        font-size: 19.5px;
-      }
+      text-align: left;
+      font-size: 13px;
+    }
   }
 
   .pink-button {
     width: 80%;
     text-align: center;
-    @media (min-width: 1200px) {
-        width: 50%;
-        padding: 0 60px;
 
-      }
+    @media (min-width: 1200px) {
+      max-width: 285px;
+      padding: 15px 60px;
+      font-size: 16px;
+    }
   }
 
   .nav-bar {
@@ -69,11 +94,12 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
+
     @media (min-width: 1200px) {
-        display: flex;
-        flex-direction: row;
+      display: flex;
+      flex-direction: row;
+    }
   }
-}
 
   .side-left {
     position: relative;
@@ -82,15 +108,23 @@
     justify-content: center;
     align-items: center;
     gap: 25px;
+
     @media (min-width: 1200px) {
-        display: flex;
-        align-items: flex-start;
+      display: flex;
+      align-items: flex-start;
+      width: 40%;
+    }
   }
+
+  .side-right {
+    @media (min-width: 1200px) {
+      width: 60%;
+    }
   }
 
   .white-button {
     @media (min-width: 1200px) {
-      padding: 13px 60px;
+      padding: 13px 40px;
     }
   }
 }
