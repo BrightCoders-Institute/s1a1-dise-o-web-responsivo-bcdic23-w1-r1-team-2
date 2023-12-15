@@ -12,7 +12,9 @@
 
     .footer-section{
         @extend .row;
-        gap: 15px;
+        gap: 25px;
+        align-items: flex-start;
+        width: 100%;
     }
 
     .text-wrapper{
@@ -25,6 +27,18 @@
         img {
             width: 20px;
         }
+    }
+
+    .link {
+        color: white;
+        text-decoration: none;
+    }
+
+    .link-wrapper {
+        @extend .row;
+        gap: 15px;
+        width: 100%;
+        align-items: flex-start;
     }
 
     .text{
