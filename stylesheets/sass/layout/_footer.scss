@@ -57,4 +57,28 @@
     .img-wrapper{
         width: 10%;
     }
+    .button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+        i {
+            color: white;
+            font-size: 15px;
+            border-radius: 100px;
+            border: 1px solid white;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .copyright{
+        color: white;
+        text-align: center;
+        font-size: 13px;
+        margin: auto;
+    }
 }
