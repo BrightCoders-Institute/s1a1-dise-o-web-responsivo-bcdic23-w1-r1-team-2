@@ -11,6 +11,6 @@
 > Sharon Belmont.
 > Ramón Díaz.
 > Alan Hernández.
-> Salvar Orozco.
+> Salvador Orozco.
 
   
