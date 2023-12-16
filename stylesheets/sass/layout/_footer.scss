@@ -18,6 +18,7 @@
     @media (min-width: 1200px) {
         display: flex;
         flex-direction: row;
+        align-items: start;
       }
 
   }
@@ -87,6 +88,11 @@
       align-items: center;
       justify-content: center;
     }
+
+    @media (min-width: 1200px) {
+      display: flex;
+      justify-content: flex-start;
+    }
   }
 
   .copyright {
@@ -94,6 +100,10 @@
     text-align: center;
     font-size: 13px;
     margin: auto;
+
+    @media (min-width: 1200px) {
+      margin: 170px 0 0 0;
+    }
   }
 
   .subtitle {
@@ -148,8 +158,12 @@
         flex-direction: column;
         gap: 10px;
     }
+    &.logo {
+      margin-bottom: 25px;
+      }
+   
   }
 
+}
   
 
-}
