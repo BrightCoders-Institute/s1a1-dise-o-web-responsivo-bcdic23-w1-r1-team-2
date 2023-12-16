@@ -45,6 +45,11 @@
   .link {
     color: white;
     text-decoration: none;
+    transition: .5s all ease-in-out;
+
+    &:hover{
+        text-decoration: underline;
+    }
   }
 
   .link-wrapper {
@@ -87,6 +92,13 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
+      transition: .5s all ease-in-out;
+
+      &:hover{
+        color: $primary-color;
+        border: 1px solid $primary-color;
+      }
     }
 
     @media (min-width: 1200px) {

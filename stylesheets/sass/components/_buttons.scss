@@ -12,6 +12,12 @@
     -webkit-box-shadow: 0 1px 8.5px -6px #00252e;
     -moz-box-shadow: 0 1px 8.5px -6px #00252e;
     box-shadow: 0 1px 8.5px -6px #00252e;
+
+    transition: 0.5s all ease-in-out;
+
+    &:hover {
+        opacity: .5;
+    }
 }
 
 .pink-button {
@@ -19,4 +25,11 @@
     background-color: $primary-color;
     padding: 10px 30px; 
     color: $neutral-pale-cyan;
+    transition: 0.5s all ease-in-out;
+
+
+    &:hover {
+        opacity: .5;
+    }
 }
+
