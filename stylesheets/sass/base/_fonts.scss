@@ -1,0 +1,29 @@
+$body-size: 18px;
+$font-headers: 'Poppins', sans-serif;
+$font-body: 'Open Sans', sans-serif;
+
+.regular {
+  font-weight: 400;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+h1, h2, h3, h4, h5 {
+  text-align: center;
+  font-family: $font-headers;
+  font-weight: 600;
+  color: $neutral-dark-cyan;
+}
+
+
+p {
+  text-align: center;
+  font-weight: 400;
+  font-size: $body-size;
+}
+
+a {
+  text-decoration: none;
+}
